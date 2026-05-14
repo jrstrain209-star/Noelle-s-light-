@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #020617;
+}
+
+.star-field {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,.8) 0 1px, transparent 1px),
+    radial-gradient(circle at 80% 30%, rgba(255,255,255,.6) 0 1px, transparent 1px),
+    radial-gradient(circle at 35% 65%, rgba(199,210,254,.7) 0 1px, transparent 1px),
+    radial-gradient(circle at 70% 80%, rgba(221,214,254,.65) 0 1px, transparent 1px);
+  background-size: 180px 180px, 260px 260px, 320px 320px, 420px 420px;
+}
+
+.safe-focus:focus-visible {
+  outline: 3px solid rgba(251, 191, 36, 0.9);
+  outline-offset: 4px;
+}
